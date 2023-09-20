@@ -7,7 +7,7 @@
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 93.8vh;
     background: rgb(255, 47, 130);
     display: flex;
     flex-direction: column;
@@ -77,6 +77,26 @@ button i {
     color: rgb(51, 14, 15);
 }
 
+#foot {
+    height: 6.2vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot h2 {
+    color: white;
+    font-size: 15px;
+    margin-left: 54px;
+    padding-top: 2px;
+    letter-spacing: 0.14rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+}
+
 select {
     flex: 1;
     padding: 0 1.6rem;
@@ -103,18 +123,9 @@ select i {
     color: rgb(51, 14, 15);
 }
 
+/* ---------------------------- Responsive ------------------------------- */
 
 @media (max-width:1123px) {
-    /* .hero h1 {
-        font-size: 3rem;
-        font-weight: 500;
-        margin-top: -2rem;
-        color: #fff;
-        margin-bottom: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        letter-spacing: 0.1rem;
-    } */
-
     html {
         font-size: 90%;
     }
@@ -143,19 +154,21 @@ select i {
     }
 
     select {
-
-
         background-position-x: calc(100% - 0.2rem);
         background-position-y: 0.6rem;
         font-size: 1.1rem;
         font-weight: 300;
     }
-
 }
 
 @media (max-width:529px) {
     html {
         font-size: 70%;
+    }
+
+    #foot h2 {
+        font-size: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -163,6 +176,44 @@ select i {
 @media (max-width:404px) {
     html {
         font-size: 60%;
+    }
+
+    #foot h2 {
+        font-size: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:320px) {
+    html {
+        font-size: 50%;
+    }
+
+    #foot h2 {
+        font-size: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:285px) {
+    html {
+        font-size: 40%;
+    }
+
+    #foot h2 {
+        font-size: 60%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-height:412px) {
+  
+
+    #foot h2 {
+        font-size: 80%;
+        margin: 0 auto;
+        word-spacing: 0.3rem;
     }
 }
 
