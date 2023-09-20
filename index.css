@@ -7,7 +7,7 @@
 
 .hero {
     width: 100%;
-    height: 93.8vh;
+    height: 95.9vh;
     background: rgb(255, 47, 130);
     display: flex;
     flex-direction: column;
@@ -23,6 +23,16 @@
     margin-bottom: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.1rem;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 0.6rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 0.17rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 span {
@@ -78,23 +88,22 @@ button i {
 }
 
 #foot {
-    height: 6.2vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
     background-color: black;
-    justify-content: center;
-    align-items: center;
+    height: 2.6rem;
 }
 
 #foot h2 {
-    color: white;
-    font-size: 15px;
-    margin-left: 54px;
-    padding-top: 2px;
-    letter-spacing: 0.14rem;
-    word-spacing: 0.2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 auto;
+    letter-spacing: 0.2rem;
 }
 
 select {
@@ -125,15 +134,47 @@ select i {
 
 /* ---------------------------- Responsive ------------------------------- */
 
+
+@media (max-width:1440px) {
+    #foot {
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        height: 2.6rem;
+    }
+
+    #foot h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10rem;
+        color: #fff;
+        margin: 0 auto;
+        letter-spacing: 0.2rem;
+    }
+}
+
 @media (max-width:1123px) {
     html {
         font-size: 90%;
+    }
+
+    #foot h2 {
+        font-size: 90%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width:1000px) {
     html {
         font-size: 70%;
+    }
+
+    #foot h2 {
+        font-size: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -159,6 +200,11 @@ select i {
         font-size: 1.1rem;
         font-weight: 300;
     }
+
+    #foot h2 {
+        font-size: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:529px) {
@@ -168,7 +214,16 @@ select i {
 
     #foot h2 {
         font-size: 90%;
-        margin: 0 auto;
+        margin: 10rem auto;
+    }
+
+    .hero {
+        width: 100%;
+        height: 97.9vh;
+    }
+
+    #foot {
+        bottom: 1.3rem;
     }
 }
 
@@ -208,8 +263,14 @@ select i {
 
 
 @media (max-height:412px) {
-  
+    #foot h2 {
+        font-size: 80%;
+        margin: 0 auto;
+        word-spacing: 0.3rem;
+    }
+}
 
+@media (max-height:915px) {
     #foot h2 {
         font-size: 80%;
         margin: 0 auto;
