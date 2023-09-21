@@ -7,7 +7,7 @@
 
 .hero {
     width: 100%;
-    height: 95.9vh;
+    height: 99vh;
     background: rgb(255, 47, 130);
     display: flex;
     flex-direction: column;
@@ -89,11 +89,10 @@ button i {
 
 #foot {
     width: 100vw;
-    display: flex;
     position: absolute;
     bottom: 0;
     background-color: black;
-    height: 2.6rem;
+    height: 2.3rem;
 }
 
 #foot h2 {
@@ -104,6 +103,7 @@ button i {
     color: #fff;
     margin: 0 auto;
     letter-spacing: 0.2rem;
+   padding-top: 0.8rem;
 }
 
 select {
@@ -138,7 +138,6 @@ select i {
 @media (max-width:1440px) {
     #foot {
         width: 100vw;
-        display: flex;
         position: absolute;
         bottom: 0;
         background-color: black;
@@ -161,6 +160,11 @@ select i {
         font-size: 90%;
     }
 
+    #foot {
+        position: absolute;
+        bottom: 0;
+    }
+
     #foot h2 {
         font-size: 90%;
         margin: 0 auto;
@@ -170,6 +174,11 @@ select i {
 @media (max-width:1000px) {
     html {
         font-size: 70%;
+    }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
     }
 
     #foot h2 {
@@ -205,6 +214,11 @@ select i {
         font-size: 90%;
         margin: 0 auto;
     }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (max-width:529px) {
@@ -219,11 +233,12 @@ select i {
 
     .hero {
         width: 100%;
-        height: 97.9vh;
+        height: 98.9vh;
     }
 
     #foot {
-        bottom: 1.3rem;
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -237,6 +252,11 @@ select i {
         font-size: 90%;
         margin: 0 auto;
     }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (max-width:320px) {
@@ -248,6 +268,11 @@ select i {
         font-size: 60%;
         margin: 0 auto;
     }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (max-width:285px) {
@@ -255,9 +280,18 @@ select i {
         font-size: 40%;
     }
 
+    .newcard{
+        height: 100vh;
+    }
     #foot h2 {
         font-size: 60%;
+    padding-top: 0.4rem;
         margin: 0 auto;
+    }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -268,6 +302,11 @@ select i {
         margin: 0 auto;
         word-spacing: 0.3rem;
     }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (max-height:915px) {
@@ -275,6 +314,11 @@ select i {
         font-size: 80%;
         margin: 0 auto;
         word-spacing: 0.3rem;
+    }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
     }
 }
 
