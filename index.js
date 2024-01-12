@@ -1,4 +1,4 @@
-let speech = new SpeechSynthesisUtterance();   // it is built in speech object 
+let speech = new SpeechSynthesisUtterance();   // it is built-in Web speech API object 
 let listen = document.querySelector("#listen");
 let voices = [];    // empty array
 let voiceselect = document.querySelector("select");
@@ -18,7 +18,7 @@ voiceselect.addEventListener("change", () => {
 
 listen.addEventListener("click", () => {
     speech.text = document.querySelector("textarea").value;
-    window.speechSynthesis.speak(speech);
+    window.speechSynthesis.speak(speech);    // speak() --> method of speechsynthesis
 });
 
 // Code By - Kale Datta 
