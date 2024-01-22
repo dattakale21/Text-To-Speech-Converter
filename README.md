@@ -1,4 +1,4 @@
-![Text to Speech](text-to-speech.png)
+![text to speech](text-to-speech.png)
  
  Text-to-Speech Converter Website
 
